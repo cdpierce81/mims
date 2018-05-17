@@ -1,0 +1,107 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	overflow: hidden;
+}
+
+.flex-container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	text-align: center;
+}
+
+.flex-container > * {
+	padding: 15px;
+	-webkit-flex: 1 100%;
+	flex: 1 100%;
+}
+
+.navbar {
+	background-color: #aaa;
+	margin: 10px;
+	padding: 15px 5px;
+	overflow: hidden;
+	font-family: Helvetica, sans-serif;
+	font-size: 5px;
+	float: right;
+	box-shadow: 10px 10px 5px Silver;
+}
+
+.navbar a {
+	font-size: 10px;
+	color: black;
+	text-align: center;
+	padding: 1px 5px;
+	text-decoration: none;
+}
+	
+.navbar a.active {
+	background-color: Black;
+	color: white;
+}
+
+.navbar a:hover {
+	border-right: 1px groove black;
+	border-left: 1px groove black;
+}
+
+.article {
+	text-align: left;
+}
+
+header {
+	background: black;
+	color: white;
+}
+
+.nav a {
+	float: left;
+	list-style-type: none;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.menu a {
+	list-style-type: none;
+	padding: 10px;
+	float: right;
+}
+
+footer {
+	color: black;
+	font-size: 8px;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+
+/*@media all and (min-width: 768px) {
+	.nav, .menu {
+		text-align: left;
+		-webkit-flex: 1 auto;
+		flex: 1 auto;
+		-webkit-order: 1;
+		order: 1;
+	}
+	.article {
+		-webkit-flex: 5 0px;
+		flex: 5 0px;
+		-webkit-order: 2;
+		order: 2;
+	}
+	footer {
+		-webkit-order: 3;
+		order: 3;
+	}
+}
+*/
+/* Use a media query to add a break point at 800px: */
+/*@media screen and (max-width:800px) {
+  .menu {
+    width:100%; *//* The width is 100%, when the viewport is 800px or smaller */
+  /*}
+}*/
