@@ -21,24 +21,58 @@ body {
 }
 
 .navbar {
-	background-color: #aaa;
+	/*background-color: #aaa;
 	margin: 10px;
 	padding: 15px 5px;
 	overflow: hidden;
 	font-family: Helvetica, sans-serif;
 	font-size: 5px;
 	float: right;
-	box-shadow: 10px 10px 5px Silver;
+	box-shadow: 10px 10px 5px Silver;*/
+	height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #aaa;
+    overflow-x: hidden;
+    padding-top: 20px;
+	margin: auto;
+	text-align: center;
+	font-family: Helvetica, sans-serif;
+}
+
+.menu {
+	height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #aaa;
+    overflow-x: hidden;
+    padding-top: 20px;
+	margin: auto;
+	text-align: center;
+	font-family: Helvetica, sans-serif;
 }
 
 .navbar a {
-	font-size: 10px;
+	/*font-size: 10px;
 	color: black;
 	text-align: center;
 	padding: 1px 5px;
-	text-decoration: none;
+	text-decoration: none;*/
+	padding: 6px 8px 6px 6px;
+	text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    color: #818181;
+    display: block;
 }
-	
+
+
 .navbar a.active {
 	background-color: Black;
 	color: white;
@@ -49,8 +83,13 @@ body {
 	border-left: 1px groove black;
 }
 
-.article {
-	text-align: left;
+p {
+	
+	margin-top: 160px;
+	margin-left: 160px; /* Same as the width of the sidenav */
+    margin-right: 160px;
+	/*font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
 }
 
 header {
@@ -59,16 +98,16 @@ header {
 }
 
 .nav a {
-	float: left;
+	margin-top: 125px;
 	list-style-type: none;
-	padding: 10px;
+	/*padding: 10px;*/
 	text-decoration: none;
 }
 
 .menu a {
 	list-style-type: none;
 	padding: 10px;
-	float: right;
+	/*float: right;*/
 }
 
 footer {
@@ -79,7 +118,7 @@ footer {
 	width: 100%;
 }
 
-/*@media all and (min-width: 768px) {
+@media all and (min-width: 768px) {
 	.nav, .menu {
 		text-align: left;
 		-webkit-flex: 1 auto;
@@ -98,10 +137,19 @@ footer {
 		order: 3;
 	}
 }
-*/
+
 /* Use a media query to add a break point at 800px: */
-/*@media screen and (max-width:800px) {
-  .menu {
-    width:100%; *//* The width is 100%, when the viewport is 800px or smaller */
-  /*}
-}*/
+@media screen and (max-width:800px) {
+	.menu {
+		width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+	}
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+		padding-top: 15px;
+	}
+    .sidenav a {
+		font-size: 18px;
+	}
+}
