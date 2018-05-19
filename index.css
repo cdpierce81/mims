@@ -64,7 +64,7 @@ body {
 	text-align: center;
 	padding: 1px 5px;
 	text-decoration: none;*/
-	padding: 6px 8px 6px 6px;
+	/*padding: 6px 8px 6px 6px;*/
 	text-align: center;
     text-decoration: none;
     font-size: 10px;
@@ -74,13 +74,13 @@ body {
 
 
 .navbar a.active {
-	background-color: Black;
+	border-right: 1px groove black;
+	border-left: 1px groove black;
 	color: white;
 }
 
 .navbar a:hover {
-	border-right: 1px groove black;
-	border-left: 1px groove black;
+	color: white;
 }
 
 p {
@@ -93,7 +93,11 @@ p {
 }
 
 header {
-	color: black;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: black;
+	color: white;
 }
 
 .nav a {
