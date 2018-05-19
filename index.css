@@ -93,21 +93,18 @@ p {
 }
 
 header {
-	background: black;
-	color: white;
+	color: black;
 }
 
 .nav a {
 	margin-top: 125px;
 	list-style-type: none;
-	/*padding: 10px;*/
 	text-decoration: none;
 }
 
 .menu a {
 	list-style-type: none;
 	padding: 10px;
-	/*float: right;*/
 }
 
 footer {
@@ -146,10 +143,10 @@ footer {
 }
 
 @media screen and (max-height: 450px) {
-    .sidenav {
+    .nav {
 		padding-top: 15px;
 	}
-    .sidenav a {
+    .nav a {
 		font-size: 18px;
 	}
 }
