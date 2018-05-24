@@ -30,7 +30,7 @@ input[type = text], select, textarea {
 }
 
 input[type = submit] {
-	background-color: black;
+	background-color: LightBlue;
 	color: white;
 	padding: 14px 20px;
 	margin: auto;
@@ -40,7 +40,7 @@ input[type = submit] {
 }
 
 input[type = submit]:hover {
-	background-color: Red;
+	background-color: Black;
 }
 
 @media only screen and (max-width: 620px) {
