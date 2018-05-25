@@ -1,51 +1,94 @@
-/* Add padding to container elements */
-.container {
-	margin: auto;
-	width: 100%;
-	text-align: center;
-	font-family: Helvetica, sans-serif;
+* {
+	box-sizing: inherit;
 }
 
-form {
-	border: 3px solid Silver;
-	margin: auto;
-	margin-top: 100px;
-	width: 25%;
-	font-size: 10px;
-	padding: 10px;
-}
-	
-form.container {
-	padding: 16px;
-}
-	
-input[type = text], select, textarea {
-	text-align: center;
-	width: 100%;
-	padding: 15px 20px;
-	margin: 20px 0px;
-	display: block;
-	border: 1px solid LightGrey;
-	box-sizing: border-box;
-}
+/*html, body, div, span, h1, h2, a {
+	font-family: inherit;
+	font-size: 100%;
+	font-weight: inherit;
+	font-style: inherit;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	border: 0;
+	outline: 0;
+}*/
 
-input[type = submit] {
-	background-color: LightBlue;
-	color: white;
-	padding: 14px 20px;
-	margin: auto;
-	border: none;
+a:-webkit-any-link {
 	cursor: pointer;
-	width: 50%;
 }
 
-input[type = submit]:hover {
-	background-color: Black;
+ul {
+	list-style: disc;
 }
 
-@media only screen and (max-width: 620px) {
-	.container {
-		width: 100%;
-	}
+ul, ol {
+	margin: 0 0 1.6em 1.6em;
 }
-	
+
+ol, ul {
+	list-style: none;
+}
+
+li {
+	text-align: -webkit-match-parent;
+}
+
+svg:not(:root), symbol, image, marker, pattern, foreignObject {
+	overflow: hidden;
+}
+
+.jetpack-social-navigation {
+	clear: both;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.jetpack-social-navigation ul {
+	display: block;
+	margin: 0 0 1.5em;
+	padding: 0;
+}
+
+.jetpack-social-navigation ul a, .jetpack-social-navigation ul a:visited {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	transition: color .2s;
+}
+
+.jetpack-social-navigation a {
+	border: 0;
+	height: 1em;
+	width: 1em;
+}
+
+.jetpack-social-navigation ul li {
+	display: inline-block;
+	background: DarkBlue;
+	color: white;
+	font-size: 14px;
+	list-style: none;
+	line-height: .5;
+	margin: .2em .1em;
+	padding: 8px;
+	border-radius: 50%;
+}
+
+.jetpack-social-navigation-svg .icon {
+	color: inherit;
+	fill: currentColor;
+	height: 1em;
+	vertical-align: middle;
+	width: 1em;
+}
+
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	left: -1000em;
+}
