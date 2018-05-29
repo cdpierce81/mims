@@ -1,26 +1,11 @@
 * {
-	box-sizing: inherit;
+	box-sizing: border-box;
 }
 
 body {
 	background: LightGrey;
-}
-
-body, div {
-	font-family: inherit;
-	font-size: 100%;
-	font-weight: inherit;
-	font-style: inherit;
-	margin: 0;
-	padding: 0;
-	vertical-align: baseline;
-	border: 0;
-	outline: 0;
+	transition: background-color 0.5s;
 	overflow: hidden;
-}
-
-div {
-	display: block;
 }
 
 header {
@@ -40,29 +25,15 @@ h2 {
 	color: DarkBlue;
 }
 
-.site {
-	/*max-width: 1180px;*/
-	margin-left: auto;
-	margin-right: auto;
-	padding-right: 2%;
-	padding-left: 2%;
+#main {
+	transition: margin-left .5s;
+	padding: 16px;
 }
 
 .logo {
 	padding-bottom: 1px;
 	padding-right: 1px;
 	float: right;
-}
-
-.navbar {
-	
-}
-
-.nav, .menu {
-	text-shadow: 10px 10px 5px Silver;
-    padding: 15px 5px;
-	font-family: Helvetica, sans-serif;
-	font-size: 5px;
 }
 
 .navbar a {
@@ -83,18 +54,53 @@ h2 {
 	color: black;
 }
 
-.menu {
-	margin: auto;
+.sidemenu a:hover {
+	color: white;
 }
 
-.info {
+.nav, .sidemenu {
+	text-shadow: 10px 10px 5px Silver;
+    padding: 15px 5px;
+	font-family: Helvetica, sans-serif;
+	font-size: 5px;
+}
+
+.sidemenu {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	/*background-color: #111;*/
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+}
+
+.sidemenu a{
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 20px;
+	color: DarkBlue;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidemenu .close {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+span:hover {
 	color: white;
-	margin: 10px;
-	padding: 50px 50px;
 }
 
 footer {
-	background: DarkBlue;
+	/*background: DarkBlue;*/
 	color: black;
 	text-align: center;
 	font-size: 8px;
@@ -103,12 +109,21 @@ footer {
 	width: 100%;
 }
 
+@media screen and (max-height: 450px) {
+	.sidemenu {
+		padding-top: 15px;
+	}
+	.sidemenu a {
+		font-size: 18px;
+	}
+}
+
 /*@viewport {
 	width: device-width;
 	zoom: 1.0;
 }*/
 
-@media (max-width: 1024px){
+/*@media (max-width: 1024px){
 	width: 360px;
 }
 
