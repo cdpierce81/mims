@@ -2,18 +2,6 @@
 	box-sizing: inherit;
 }
 
-/*html, body, div, span, h1, h2, a {
-	font-family: inherit;
-	font-size: 100%;
-	font-weight: inherit;
-	font-style: inherit;
-	margin: 0;
-	padding: 0;
-	vertical-align: baseline;
-	border: 0;
-	outline: 0;
-}*/
-
 a:-webkit-any-link {
 	cursor: pointer;
 }
@@ -36,6 +24,15 @@ li {
 
 svg:not(:root), symbol, image, marker, pattern, foreignObject {
 	overflow: hidden;
+}
+
+.heading {
+	text-align: center;
+}
+
+.media {
+	text-align: center;
+	padding: 50px;
 }
 
 .jetpack-social-navigation {
@@ -92,3 +89,8 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
 	overflow: hidden;
 	left: -1000em;
 }
+
+.menu-item-11:hover, .menu-item-12:hover, .menu-item-13:hover, .menu-item-14:hover {
+	-ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 

@@ -9,11 +9,7 @@ form {
 	font-size: 15px;
 }
 	
-.container {
-	margin: auto;
-	width: 100%;
-	padding: 16px;
-}
+
 
 /* Full-width input fields */
 input[type=text], textarea {
