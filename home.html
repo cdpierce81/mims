@@ -6,6 +6,7 @@
 		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0" charset = "UTF-8">
 		<link rel = "stylesheet" type = "text/css" href = "index.css">
 		<link rel = "stylesheet" type = "text/css" href = "home.css">
+		<link rel = "stylesheet" type = "text/css" href = "appointment.css">
 	</head>
 	<body>
 		<div id = "mySidemenu" class = "sidemenu">
@@ -25,40 +26,98 @@
 				<h1>Mims Installation</h1>
 			</header>
 
-			<span style = "font-size: 20px; cursor: pointer" onclick = "openNav(0)">&#9776;</span>
-				
-			<div class = "navbar">
-				<nav class = "nav">
-					<a href = "index.html">Home</a>
-					<a href = "support.html">Support</a>
-					<a href = "contact.html">Contact Us</a>
-				</nav>
+			<div style = "padding: 25px;">
+				<span style = "font-size: 20px; cursor: pointer" onclick = "openNav(0)">&#9776;</span>
 			</div>
+			
+			<button class = "appointment" onClick = "document.getElementById('id01').style.display = 'block'" type = "button" value = "Book Today">Book Today</button>
+			
+			<div id = "id01" class = "modal">
+			
+				<form class = "modal-content" action = "appointment.php">
+					<div>
+						<div>
+							<input class = "label" type = "text" placeholder = "Name" name = "name" required>
+
+							<input class = "label" type = "text" placeholder = "Email" name = "email" required>
+						
+							<input class = "label" type = "text" placeholder = "Phone" name = "phone" required>
+						
+							<textarea placeholder = "Special notes or requirements" name = "message"></textarea>
+						</div>
+						
+						<div>
+							<p>Type of Service:
+								<input type = "checkbox" name = "checkbox" value = "Security">Security
+								<input type = "checkbox" name = "checkbox" value = "Television">Television
+								<input type = "checkbox" name = "checkbox" value = "Stereo">Stereo
+								<input type = "checkbox" name = "checkbox" value = "Suround">Surround
+						<br>
+						<br>
+							Best form of contact:
+								<input type = "radio" name = "radio" value = "phone">Phone
+								<input type = "radio" name = "radio" value = "email">Email
+						<br>
+						<br>
+							Days available:
+								<input type = "checkbox" name = "checkbox" value = "Monday">Monday
+								<input type = "checkbox" name = "checkbox" value = "Tuesday">Tuesday
+								<input type = "checkbox" name = "checkbox" value = "Wednesday">Wednesday
+								<input type = "checkbox" name = "checkbox" value = "Thursday">Thursday
+								<input type = "checkbox" name = "checkbox" value = "Friday">Friday
+						<br>
+						<br>
+							Best time of day:
+								<input type = "checkbox" name = "checkbox" value = "Morning">Morning
+								<input type = "checkbox" name = "checkbox" value = "Afternoon">Afternoon
+								<input type = "checkbox" name = "checkbox" value = "Evening">Evening
+							</p>	
+							<div class = "submitcancel">
+								<button class = "submit" type = "submit" value = "Submit">Submit</button>
+								<button onclick = "document.getElementById('id01').style.display = 'none'" class = "cancel" type = "button" value = "Cancel">Cancel</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			
+			<div style = "margin-left: 50px; margin-right: 50px;">
+				<div class = "navbar">
+					<nav class = "nav">
+						<a href = "index.html">Home</a>
+						<a href = "support.html">Support</a>
+						<a href = "contact.html">Contact Us</a>
+					</nav>
+				</div>
 		
-			<h2>Security</h2>
-			
-				<img class = "pic" src = "https://s3-media3.fl.yelpcdn.com/bphoto/KE9t4iob-zb2pLpx321ikg/ls.jpg" alt = "theater installation" height = "200">
-				<img class = "pic" src = "http://livingplug.com/wp-content/uploads/2017/08/Surround-Sound-Speakers.jpg" alt = "home theatre setup in livingroom" height = "200">
-				<img class = "pic" src = "http://i1.adis.ws/i/washford/Audio_Services_770x470.jpg?$adpimage$" alt = "guy installing car radio" height = "200">
-				<img class = "pic" src = "https://s3-eu-west-1.amazonaws.com/files.visiotech.es/images/stories/news/fibaro/23339-555442-1_Schranka19.jpg" alt = "tv installation" height = "200">
-				<img class = "pic" src = "http://lib5.thenmedia.co.uk/med/installing-a-burglar-alarm-M215725.jpg" alt = "wall panel installation" height = "200px">
-				<img class = "pic" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAYrftitFzocpHZZ9RLY-Vhm5FOA-d1vGsQABXw5Pt1fMNztLnRQ" alt = "camera install" height = "200">
-				<img class = "pic" src = "http://ovnimag.com/wp-content/uploads/2017/02/exterior-home-security-cameras-dayton-tx-outdoor-home-security-camera-installation-model-768x768.jpg" alt = "security camera install" height = "200">
+				<div style = "padding: 50px 10px 0 10px;">
+					<h2>Security</h2>
 				
-			<p class = "info">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-			Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
-			Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
-			Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
-			Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora
-			torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales 
-			ligula in libero. Sed dignissim lacinia nunc.</p>
+						<img class = "pic" src = "https://s3-media3.fl.yelpcdn.com/bphoto/KE9t4iob-zb2pLpx321ikg/ls.jpg" alt = "theater installation" width = "200" height = "200">
+						<img class = "pic" src = "http://livingplug.com/wp-content/uploads/2017/08/Surround-Sound-Speakers.jpg" alt = "home theatre setup in livingroom" width = "200" height = "200">
+						<img class = "pic" src = "http://i1.adis.ws/i/washford/Audio_Services_770x470.jpg?$adpimage$" alt = "guy installing car radio" width = "200" height = "200">
+						<img class = "pic" src = "https://s3-eu-west-1.amazonaws.com/files.visiotech.es/images/stories/news/fibaro/23339-555442-1_Schranka19.jpg" alt = "tv installation" width = "200" height = "200">
+						<img class = "pic" src = "http://lib5.thenmedia.co.uk/med/installing-a-burglar-alarm-M215725.jpg" alt = "wall panel installation" height = "200px">
+						<img class = "pic" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAYrftitFzocpHZZ9RLY-Vhm5FOA-d1vGsQABXw5Pt1fMNztLnRQ" alt = "camera install" width = "210" height = "200">
+						<img class = "pic" src = "http://ovnimag.com/wp-content/uploads/2017/02/exterior-home-security-cameras-dayton-tx-outdoor-home-security-camera-installation-model-768x768.jpg" alt = "security camera install" height = "200">
+					
+					<p class = "info">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+					Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
+					Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
+					Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora
+					torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales 
+					ligula in libero. Sed dignissim lacinia nunc.</p>
+				</div>
+			</div>
 			
+			<footer>
+				<p>© copyright MimsInstallation.com</p>
+			</footer>
 		</div>
 		
+		<script src = "index.js"></script>
 		<script src = "home.js"></script>
 		
-		<footer>
-			<p>© copyright MimsInstallation.com</p>
-		</footer>
 	</body>
 </html>

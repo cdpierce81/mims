@@ -8,8 +8,6 @@ form {
 	padding: 10px;
 	font-size: 15px;
 }
-	
-
 
 /* Full-width input fields */
 input[type=text], textarea {
@@ -26,7 +24,8 @@ button {
 	padding: 14px 20px;
 	margin: auto;
 	border: none;
-	cursor: pointer;	
+	cursor: pointer;
+	
 }
 	
 button:hover {
