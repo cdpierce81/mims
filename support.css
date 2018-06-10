@@ -11,6 +11,7 @@
 }
 
 form {
+	background-color: Silver;
 	border: 3px solid Silver;
 	margin: auto;
 	font-size: 10px;
@@ -19,7 +20,7 @@ form {
 }
 	
 form.form {
-	padding: 16px;
+	padding: 15px;
 }
 	
 input[type = text], textarea {
