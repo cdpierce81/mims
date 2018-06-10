@@ -123,6 +123,35 @@ span:hover {
 	color: white;
 }
 
+	#container {
+		padding: 50px;
+	}
+	
+	div.gallery {
+		border: 1px solid #ccc;
+	}
+	
+	div.gallery:hover {
+		box-shadow: 10px 10px 5px Silver;
+	}
+	
+	div.gallery img {
+		width: 100%;
+		height: auto;
+	}
+	
+	.reactive {
+		padding: 0 6px;
+		float: left;
+		width: 24.99999%;
+	}
+	
+	.clearfix:after {
+		content: "";
+		display: table;
+		clear: both;
+	}	
+
 footer {
 	background-color: DarkBlue;
 	color: white;
