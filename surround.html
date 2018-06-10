@@ -19,73 +19,70 @@
 		</div>
 		
 		<div id = "main">
-			<header>
+			<header class = "clearfix">
 				<div class = "logo">
 					<img src = "http://ahearnelaw.com/wp-content/uploads/2016/11/40e336c881e594cd3c9037ccd62f0187-736x380
 					.jpg" alt = "two wires sending electricity" width = "45px" height = "40px">
-				</div>	
-				<h1>Mims Installation</h1>
-			</header>
-
-			<div style = "padding: 25px;">
-				<span style = "font-size: 20px; cursor: pointer" onclick = "openNav(0)">&#9776;</span>
+				</div>
 				
-				<button class = "appointment" onClick = "document.getElementById('id01').style.display = 'block'" type = "button" value = "Book Today">Book Today</button>
-			</div>
+				<span style = "font-size: 30px; cursor: pointer" onclick = "openNav(0)">&#9776;</span>
+			</header>
 			
-			<div id = "id01" class = "modal">
-			
-				<form class = "modal-content" action = "appointment.php">
-					<div>
-						<div>
-							<input class = "label" type = "text" placeholder = "Name" name = "name" required>
+				<h1>Mims Installation</h1>
 
-							<input class = "label" type = "text" placeholder = "Email" name = "email" required>
-						
-							<input class = "label" type = "text" placeholder = "Phone" name = "phone" required>
-						
-							<textarea placeholder = "Special notes or requirements" name = "message"></textarea>
-						</div>
-						
+				<!--<div id = "id01" class = "modal">
+				
+					<form class = "modal-content" action = "appointment.php">
 						<div>
-							<p>Type of Service:
-								<input type = "checkbox" name = "checkbox" value = "Security">Security
-								<input type = "checkbox" name = "checkbox" value = "Television">Television
-								<input type = "checkbox" name = "checkbox" value = "Stereo">Stereo
-								<input type = "checkbox" name = "checkbox" value = "Suround">Surround
-						<br>
-						<br>
-							Best form of contact:
-								<input type = "radio" name = "radio" value = "phone">Phone
-								<input type = "radio" name = "radio" value = "email">Email
-						<br>
-						<br>
-							Days available:
-								<input type = "checkbox" name = "checkbox" value = "Monday">Monday
-								<input type = "checkbox" name = "checkbox" value = "Tuesday">Tuesday
-								<input type = "checkbox" name = "checkbox" value = "Wednesday">Wednesday
-								<input type = "checkbox" name = "checkbox" value = "Thursday">Thursday
-								<input type = "checkbox" name = "checkbox" value = "Friday">Friday
-						<br>
-						<br>
-							Best time of day:
-								<input type = "checkbox" name = "checkbox" value = "Morning">Morning
-								<input type = "checkbox" name = "checkbox" value = "Afternoon">Afternoon
-								<input type = "checkbox" name = "checkbox" value = "Evening">Evening
-							</p>	
-							<div class = "submitcancel">
-								<button class = "submit" type = "submit" value = "Submit">Submit</button>
-								<button onclick = "document.getElementById('id01').style.display = 'none'" class = "cancel" type = "button" value = "Cancel">Cancel</button>
+							<div>
+								<input class = "label" type = "text" placeholder = "Name" name = "name" required>
+
+								<input class = "label" type = "text" placeholder = "Email" name = "email" required>
+							
+								<input class = "label" type = "text" placeholder = "Phone" name = "phone" required>
+							
+								<textarea placeholder = "Special notes or requirements" name = "message"></textarea>
+							</div>
+							
+							<div>
+								<p>Type of Service:
+									<input type = "checkbox" name = "checkbox" value = "Security">Security
+									<input type = "checkbox" name = "checkbox" value = "Television">Television
+									<input type = "checkbox" name = "checkbox" value = "Stereo">Stereo
+									<input type = "checkbox" name = "checkbox" value = "Suround">Surround
+							<br>
+							<br>
+								Best form of contact:
+									<input type = "radio" name = "radio" value = "phone">Phone
+									<input type = "radio" name = "radio" value = "email">Email
+							<br>
+							<br>
+								Days available:
+									<input type = "checkbox" name = "checkbox" value = "Monday">Monday
+									<input type = "checkbox" name = "checkbox" value = "Tuesday">Tuesday
+									<input type = "checkbox" name = "checkbox" value = "Wednesday">Wednesday
+									<input type = "checkbox" name = "checkbox" value = "Thursday">Thursday
+									<input type = "checkbox" name = "checkbox" value = "Friday">Friday
+							<br>
+							<br>
+								Best time of day:
+									<input type = "checkbox" name = "checkbox" value = "Morning">Morning
+									<input type = "checkbox" name = "checkbox" value = "Afternoon">Afternoon
+									<input type = "checkbox" name = "checkbox" value = "Evening">Evening
+								</p>	
+								<div class = "submitcancel">
+									<button class = "submit" type = "submit" value = "Submit">Submit</button>
+									<button onclick = "document.getElementById('id01').style.display = 'none'" class = "cancel" type = "button" value = "Cancel">Cancel</button>
+								</div>
 							</div>
 						</div>
-					</div>
-				</form>
-			</div>
-			
-			<div style = "margin-left: 50px; margin-right: 50px;">
+					</form>
+				</div>-->
+				
+			<div style = "margin-left: 50px; margin-right: 50px;">	
 				<div class = "navbar">
 					<nav class = "nav">
-						<a href = "index.html">Home</a>
+						<a class = "active" href = "index.html">Home</a>
 						<a href = "support.html">Support</a>
 						<a href = "contact.html">Contact Us</a>
 					</nav>
@@ -110,6 +107,11 @@
 					torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales 
 					ligula in libero. Sed dignissim lacinia nunc.</p>
 				</div>
+				
+				<!-- Start Square Appointments Embed code --> 
+						<a target="_top" style="background-color: DarkBlue; color: white; height: 40px; text-transform: uppercase; font-family: 'Square Market', 'helvetica neue', helvetica, arial, sans-serif; letter-spacing: 1px; line-height: 38px; padding: 0 28px; border-radius: 3px; font-weight: 500; font-size: 14px; cursor: pointer; display: inline-block;" href="https://squareup.com/appointments/book/V3TTK39BSWQDV/c-d-pierce-financial" rel="nofollow">Book Today</a>
+						<!-- End Square Appointments Embed code -->
+				
 			</div>
 
 			<footer>
