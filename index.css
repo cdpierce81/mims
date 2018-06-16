@@ -20,7 +20,7 @@ h1 {
 	color: White;
 	text-align: center;
 	font-size: 15px;
-	padding: 20px;
+	padding: 10px;
 }
 
 h2 {
@@ -128,38 +128,9 @@ span:hover {
 	color: white;
 }
 
-	#container {
-		padding: 50px;
-	}
-	
-	div.gallery {
-		border: 1px solid #ccc;
-	}
-	
-	div.gallery:hover {
-		box-shadow: 10px 10px 5px Silver;
-	}
-	
-	div.gallery img {
-		width: 100%;
-		height: auto;
-	}
-	
-	.reactive {
-		padding: 0 6px;
-		float: left;
-		width: 24.99999%;
-	}
-	
-	.clearfix:after {
-		content: "";
-		display: table;
-		clear: both;
-	}	
-
 footer {
-	
-	color: DarkBlue;
+	background-color: DarkBlue;
+	color: white;
 	margin: auto;
 	text-align: center;
 	font-size: 8px;
@@ -179,5 +150,12 @@ footer {
 	}
 }
 
+@media only screen and (min-width: 240px) {
+	.book {
+		overflow: hidden;
+		text-overflow: clip;
+		white-space: nowrap;
+	}
+}
 
 

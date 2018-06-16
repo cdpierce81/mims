@@ -46,9 +46,27 @@ button:hover {
 	opacity: 0.5;
 }
 
+.submit {
+	margin-top: 5px;
+}
+
 @media only screen and (max-width: 800px) {
 	.form {
 		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 240px) {
+	button {
+		width: 100%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	
+	.book {
+		overflow: hidden;
+		text-overflow: clip;
+		white-space: nowrap;
 	}
 }
 	
