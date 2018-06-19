@@ -29,7 +29,9 @@ h2 {
 }
 
 img {
-	padding-bottom: 5px;
+	-ms-transform: scale(.9); /* IE 9 */
+    -webkit-transform: scale(.9); /* Safari 3-8 */
+    transform: scale(.9);
 	}
 
 #main {
@@ -45,7 +47,7 @@ img {
 	float: right;
 }
 
-.appointment {
+/*.appointment {
 	background-color: DarkBlue;
 	margin: 0 25px;
 	color: White;
@@ -58,7 +60,7 @@ img {
 .appointment:hover {
 	background-color: DarkBlue;
 	color: white;
-}
+}*/
 
 .navbar a {
 	padding: 6px 8px 6px 6px;
@@ -69,7 +71,9 @@ img {
 }
 
 .navbar a.active {
-	color: DarkBlue;
+	background-color: DarkBlue;
+	border-radius: 5px;
+	color: white;
 }
 
 .navbar a:hover {
