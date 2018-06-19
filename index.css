@@ -28,6 +28,10 @@ h2 {
 	text-align: center;
 }
 
+img {
+	padding-bottom: 5px;
+	}
+
 #main {
 	transition: margin-left .6s;
 }
@@ -38,7 +42,6 @@ h2 {
 }
 
 .logo {
-	
 	float: right;
 }
 
@@ -149,6 +152,7 @@ footer {
 	.sidemenu a {
 		font-size: 18px;
 	}
+	
 }
 
 @media only screen and (min-width: 240px) {
@@ -158,5 +162,4 @@ footer {
 		white-space: nowrap;
 	}
 }
-
 
