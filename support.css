@@ -34,7 +34,7 @@ input[type = text], textarea {
 }
 
 button {
-	background-color: DarkBlue;
+	background-color: black;
 	color: white;
 	padding: 14px 20px;
 	margin: auto;
