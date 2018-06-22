@@ -63,7 +63,7 @@ svg:not(:root), symbol, image, marker, pattern, foreignObject {
 
 .jetpack-social-navigation ul li {
 	display: inline-block;
-	background: black;
+	background: DarkBlue;
 	color: white;
 	font-size: 14px;
 	list-style: none;

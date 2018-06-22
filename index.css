@@ -50,21 +50,6 @@ img {
 	background-size: 100%;
 }
 
-/*.appointment {
-	background-color: DarkBlue;
-	margin: 0 25px;
-	color: White;
-	text-align: center;
-	font-size: 20px;
-	border-radius: 50%;
-	cursor: pointer;
-}
-
-.appointment:hover {
-	background-color: DarkBlue;
-	color: white;
-}*/
-
 .navbar a {
 	padding: 6px 8px 6px 6px;
 	text-align: center;
@@ -74,7 +59,7 @@ img {
 }
 
 .navbar a.active {
-	background-color: black;
+	background-color: DarkBlue;
 	border-radius: 5px;
 	color: white;
 }
