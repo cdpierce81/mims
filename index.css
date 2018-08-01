@@ -82,7 +82,7 @@ h2 {
 }
 
 .sidemenu a{
-	padding: 10px 10px 10px 35px;
+	padding: 60px 10px 10px 35px;
 	text-decoration: none;
 	font-size: 20px;
 	color: black;
@@ -91,7 +91,7 @@ h2 {
 	transition: 0.3s;
 }
 
-.sidemenu .close {
+.sidemenu, .close {
 	position: absolute;
 	top: 0;
 	right: 50px;
