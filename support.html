@@ -39,23 +39,23 @@
 				<div>
 					<form class = "form" method = "get" action = "support.php">
 						<p>Name:</p>
-						<input type = "text" name = "name"><span class = "error"> * <?php echo $nameErr;?></span>
+						<input type = "text" name = "name" required><span class = "error"> * </span>
 						<br><br>
 						<p>Email:</p>
-						<input type = "text" name = "email"><span class = "error"> * <?php echo $emailErr;?></span>
+						<input type = "email" name = "email" required><span class = "error"> * </span>
 						<br><br>
 						<p>Phone:</p>
-						<input type = "tel" name = "phone"><span class = "error"> * <?php echo $phoneErr;?></span>
+						<input type = "tel" name = "usrtel" required><span class = "error"> * </span>
 						<br><br>
 						<p>Message:</p>
-						<textarea name = "message" rows = "6" cols = "25"></textarea><span class = "error"> * <?php echo $messageErr;?></span>
+						<textarea name = "message" rows = "6" cols = "25" required></textarea><span class = "error"> * </span>
 						<br><br>
 						<button class = "submit" type = "submit" name = "submit" value = "Submit">Submit</button>
 						<br><br>
 						<p>Request Phone Call: </p><br>
-						Yes: <input type = "checkbox" value = "<?php echo $call;?>" name = "call"><span class = "error"> * </span><br>
+						Yes: <input type = "radio" name = "call"><span class = "error"> * </span><br>
 						<br>
-						No: <input type = "checkbox" value = "<?php echo $call;?>" name = "call"><span class = "error"> * </span><br>
+						No: <input type = "radio" name = "call"><span class = "error"> * </span><br>
 						<br>
 					</form>
 				</div>
