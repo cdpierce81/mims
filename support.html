@@ -4,7 +4,7 @@
 		<title>Security</title>
 		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
 		<link rel = "stylesheet" type = "text/css" href = "index.css">
-		<link rel = "stylesheet" type = "text/css" href = "support.css?v=<?php echo time();?>">
+		<link rel = "stylesheet" type = "text/css" href = "support.css">
 	</head>
 	<body>
 	
@@ -16,36 +16,53 @@
 		</div>
 		
 		<div id = "main">
-			<div class = "logo"
+			<div class = "logo">
 
 				<header class = "clearfix">
-					<span onclick = "openNav(0)">&#9776;</span>
+					<span class = "bmenu" onclick = "openNav(0)">&#9776;</span>
 					<h1>Mims Installation</h1>
 				</header>
 			</div>
 				
-			<div>	
-				<div class = "navbar">
-					<nav class = "nav">
-						<a href = "index.html">Home</a>
-						<a href = "contact.html">Contact Us</a>
-						<a class = "active" href = "support.html">Support</a>
-					</nav>
+			<div class = "navbar">
+				<nav class = "nav">
+					<a href = "index.html">Home</a>
+					<a href = "contact.html">Contact Us</a>
+					<a class = "active" href = "support.html">Support</a>
+				</nav>
+			</div>
+			
+			<div class = "heading">
+				<h2>Support</h2><br>
+				<p>Please fill out the form and we will contact you shortly. Thank you!</p>
+			
+				<div>
+					<form class = "form" method = "get" action = "support.php">
+						<p>Name:</p>
+						<input type = "text" name = "name"><span class = "error"> * <?php echo $nameErr;?></span>
+						<br><br>
+						<p>Email:</p>
+						<input type = "text" name = "email"><span class = "error"> * <?php echo $emailErr;?></span>
+						<br><br>
+						<p>Phone:</p>
+						<input type = "tel" name = "phone"><span class = "error"> * <?php echo $phoneErr;?></span>
+						<br><br>
+						<p>Message:</p>
+						<textarea name = "message" rows = "6" cols = "25"></textarea><span class = "error"> * <?php echo $messageErr;?></span>
+						<br><br>
+						<button class = "submit" type = "submit" name = "submit" value = "Submit">Submit</button>
+						<br><br>
+						<p>Request Phone Call: </p><br>
+						Yes: <input type = "checkbox" value = "<?php echo $call;?>" name = "call"><span class = "error"> * </span><br>
+						<br>
+						No: <input type = "checkbox" value = "<?php echo $call;?>" name = "call"><span class = "error"> * </span><br>
+						<br>
+					</form>
 				</div>
-				
-				<div style = "padding: 50px 10px 0 10px;">
-					<div class = "heading">
-						<h2>Support</h2><br>
-						<p>Please fill out the form and we will contact you shortly. Thank you!</p>
-					</div>
-					
-					<?php require 'supportForm.php';?>
-				</div>
-				
 			</div>
 			
 			<footer>
-			<p style = "padding: 6.5px;">© copyright MimsInstallation.com</p>
+				<p style = "padding: 6.5px;">© copyright MimsInstallation.com</p>
 			</footer>
 		</div>
 		

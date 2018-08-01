@@ -6,13 +6,23 @@ form {
 	background-color: Silver;
 	border: 3px solid Silver;
 	font-size: 10px;
-	
-form.form {
+	width: 40%;
+	margin: 0 auto;
 }
-	
-input[type = text, tel, submit], textarea {
+
+form p {
+	padding: 5px;
+}
+
+.form {
+	margin: 10px auto;
+	padding: 10px;
+}
+
+input[type = text, tel, message, submit], textarea {
 	border: 1px solid LightGrey;
 	box-sizing: border-box;
+	padding: 5px;
 }
 
 .submit {
@@ -24,17 +34,17 @@ input[type = text, tel, submit], textarea {
 	cursor: pointer;
 }
 
-button:hover {
-	opacity: 0.5;
+.submit:hover {
+	opacity: 0.8;
 }
 
 .error {
 	color: red;
 }
 
-@media only screen and (max-width: 800px) {
-	.form {
-		width: 100%;
+@media only screen and (max-width: 600px) {
+	form, .form, input, textarea {
+		width: auto;
 	}
 }
 
