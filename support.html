@@ -4,7 +4,7 @@
 		<title>Security</title>
 		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
 		<link rel = "stylesheet" type = "text/css" href = "index.css">
-		<link rel = "stylesheet" type = "text/css" href = "support.css">
+		<link rel = "stylesheet" type = "text/css" href = "support.css?v=<?php echo time();?>">
 	</head>
 	<body>
 	
@@ -12,7 +12,6 @@
 			<a href = "javascript:void(0)" class = "close" onclick = "closeNav()">&times;</a>
 			<a href = "home.html">Security</a>
 			<a href = "tv.html">Television</a>
-			<a href = "car.html">Stereo</a>
 			<a href = "surround.html">Surround</a>
 		</div>
 		
@@ -35,25 +34,14 @@
 				</div>
 				
 				<div style = "padding: 50px 10px 0 10px;">
-					<div>
-						<div class = "heading">
-							<h2>Support</h2><br>
-							<p>Please fill out the form and we will contact you shortly. Thank you!
-						</div>
-				
-						<form  class = "form" action = "appointment.php">
-							<div>
-								<input type = "text" placeholder = "Name" name = "name" required>
-			
-								<input type = "text" placeholder = "Phone" name = "name" required>
-			
-								<textarea placeholder = "Text .." name = "message" style = "height: 50px"></textarea>
-						
-								<button class = "submit" type = "button" value = "Submit">Submit</button>
-							</div>
-						</form>
+					<div class = "heading">
+						<h2>Support</h2><br>
+						<p>Please fill out the form and we will contact you shortly. Thank you!</p>
 					</div>
+					
+					<?php require 'supportForm.php';?>
 				</div>
+				
 			</div>
 			
 			<footer>
