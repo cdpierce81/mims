@@ -44,6 +44,10 @@ input[type = text, tel, message, submit], textarea {
 	color: red;
 }
 
+.align {
+	vertical-align: text-top;
+}
+
 @media only screen and (max-width: 600px) {
 	form, .form, input, textarea {
 		width: auto;
